@@ -31,7 +31,7 @@ public class Movie {
 					//2. 아동물 (3일) 1500원, 일일초과 1500원, 적립1
 					//3. 최신물 (1일) 3000원, 일일초과 3000원, 적립1
 	
-		switch(getPriceCode()){
+		switch(priceCode){
 		case Movie.ReGULAR:
 			result = 2000;
 			if (daysRented > 2) {
@@ -49,5 +49,13 @@ public class Movie {
 			break;
 		}
 		return result;
+	}
+	
+	public int getfrequentRenterPoints(int aDaysRented) {
+		if (priceCode == Movie.NEW_RELEASE && aDaysRented > 1) {
+			return 2;
+		}else{
+			return 1;
+		}
 	}
 }
