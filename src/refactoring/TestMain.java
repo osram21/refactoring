@@ -35,6 +35,11 @@ public class TestMain {
 		System.out.println("=======================");
 		System.out.println(c2.statement());
 		
+		System.out.println("===========html===========");
+		System.out.println(c1.htmlstatement());
+		System.out.println(c2.htmlstatement());
+		
+		
 	}
 
 }
