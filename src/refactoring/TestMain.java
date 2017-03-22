@@ -3,14 +3,15 @@ package refactoring;
 import refactoring.dto.Customer;
 import refactoring.dto.Movie;
 import refactoring.dto.Rental;
+import refactoring.price.Price;
 
 public class TestMain {
 
 	public static void main(String[] args) {
-		Movie mc1 = new Movie("니모를 찾아서", Movie.CHLDRENS);
-		Movie mc2 = new Movie("말레피센트", Movie.CHLDRENS);
-		Movie mr1 = new Movie("명량", Movie.ReGULAR);
-		Movie mr2 = new Movie("변호사", Movie.ReGULAR);
+		Movie mc1 = new Movie("니모를 찾아서", Price.CHILDRENS);
+		Movie mc2 = new Movie("말레피센트", Movie.CHILDRENS);
+		Movie mr1 = new Movie("명량", Movie.REGULAR);
+		Movie mr2 = new Movie("변호사", Movie.REGULAR);
 		Movie mn1 = new Movie("미녀와야수", Movie.NEW_RELEASE);
 		Movie mn2 = new Movie("공조", Movie.NEW_RELEASE);
 		
